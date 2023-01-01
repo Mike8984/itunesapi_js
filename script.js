@@ -11,7 +11,6 @@ function getData() {
   fetch(url)
     .then((data) => data.json())
     .then((json) => {
-      console.log(json);
       let outputToPage = "";
       json.results.forEach((song) => {
         outputToPage += `
